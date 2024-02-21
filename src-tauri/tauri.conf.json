@@ -1,0 +1,96 @@
+{
+    "build": {
+        "beforeBuildCommand": "npm version",
+        "beforeDevCommand": "npm run dev",
+        "devPath": "http://localhost:9527",
+        "distDir": "../dist",
+        "withGlobalTauri": true
+    },
+    "package": {
+        "productName": "快销客PC端",
+        "version": "1.2.9"
+    },
+    "tauri": {
+        "allowlist": {
+            "all": true,
+            "http": {
+                "scope": ["http://**", "https://**", "blob:tauri://**", "tauri://localhost"]
+            },
+            "shell": {
+                "all": false,
+                "open": true
+            },
+            "fs": {
+                "all": true,
+                "copyFile": true,
+                "createDir": true,
+                "exists": true,
+                "readDir": true,
+                "readFile": true,
+                "removeDir": true,
+                "removeFile": true,
+                "renameFile": true,
+                "scope": ["*"],
+                "writeFile": true
+            }
+        },
+        "bundle": {
+            "active": true,
+            "category": "DeveloperTool",
+            "copyright": "Copyright (c) 武汉零智未来科技有限公司 2023. All rights reserved.",
+            "deb": {
+                "depends": []
+            },
+            "externalBin": [],
+            "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
+            "identifier": "com.lzwl.kxk.macapp",
+            "longDescription": "快销客、手机开单、生意好帮手。快销客主要为商贸公司、小批发商、线下门店等，提供一套标准的进销存软件，支持业务快捷开单、商品及库存管理、客户与供应商往来账目核算，数据智能化管理，提供销售及经营数据分析与统计。",
+            "macOS": {
+                "entitlements": null,
+                "exceptionDomain": "",
+                "frameworks": [],
+                "providerShortName": null,
+                "signingIdentity": null
+            },
+            "resources": [],
+            "shortDescription": "快销客、手机开单、生意好帮手",
+            "targets": "all",
+            "windows": {
+                "certificateThumbprint": null,
+                "digestAlgorithm": "sha256",
+                "timestampUrl": "",
+                "webviewInstallMode": {
+                    "type": "embedBootstrapper"
+                },
+                "wix": {
+                    "language": "zh-CN"
+                },
+                "nsis": {
+                    "languages": ["SimpChinese"]
+                }
+            }
+        },
+        "windows": [
+            {
+                "title": "快销客PC端 V1.2.9",
+                "fullscreen": false,
+                "resizable": true,
+                "center": true,
+                "minWidth": 1000,
+                "minHeight": 600,
+                "height": 800,
+                "width": 1400,
+                "hiddenTitle": true
+            }
+        ],
+        "security": {
+            "csp": null
+        },
+        "updater": {
+            "active": true,
+            "dialog": true,
+            "endpoints": ["https://www.smiwork.com/package/updater.json"],
+            "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDM2ODUyNkI1NzRGMUI3MTYKUldRV3QvRjB0U2FGTnBzMzBJZloreUtjOGkxQUplc3EzSy9SSzRuT0RHQzl5aHpWczlXRmdCbHoK"
+        }
+    }
+}
