@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "vue-cli-service serve",
         "tauri": "tauri dev",
-        "tauri:prod": "tauri build --verbose"
+        "tauri:prod": "tauri build --verbose",
+        "tauri:nsis": "tauri build --verbose  --target nsis"
     }
 }
