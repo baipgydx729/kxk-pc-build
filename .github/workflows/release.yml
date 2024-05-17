@@ -53,7 +53,7 @@ jobs:
             - name: Setup node
               uses: actions/setup-node@v1
               with:
-                  node-version: 16
+                  node-version: 20
 
             # 安装 Rust
             - name: Install Rust stable
@@ -65,14 +65,14 @@ jobs:
             - uses: Swatinem/rust-cache@v1
 
             # 可选，如果需要将 Rust 编译为 wasm，则安装 wasm-pack
-            - uses: jetli/wasm-pack-action@v0.3.0
-              with:
-                  # Optional version of wasm-pack to install(eg. 'v0.9.1', 'latest')
-                  version: v0.9.1
+            # - uses: jetli/wasm-pack-action@v0.3.0
+            #   with:
+            #       # Optional version of wasm-pack to install(eg. 'v0.9.1', 'latest')
+            #       version: v0.9.1
 
             # 可选，如果需要使用 rsw 构建 wasm，则安装 rsw
-            - name: Install rsw
-              run: cargo install rsw
+            # - name: Install rsw
+            #   run: cargo install rsw
 
             # 获取 yarn 缓存路径
             - name: Get yarn cache directory path
