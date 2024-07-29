@@ -59,7 +59,8 @@ jobs:
             - name: Install Rust stable
               uses: actions-rs/toolchain@v1
               with:
-                  toolchain: stable
+                  toolchain: 1.75
+                  override: true
 
             # 使用 Rust 缓存，加快安装速度
             - uses: Swatinem/rust-cache@v1
