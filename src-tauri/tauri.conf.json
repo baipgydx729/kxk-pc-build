@@ -66,13 +66,15 @@
                     "language": "zh-CN"
                 },
                 "nsis": {
-                    "languages": ["SimpChinese"]
+                    "languages": ["SimpChinese"],
+                    "installerIcon": "icons/icon.ico",
+                    "installMode": "both"
                 }
             }
         },
         "windows": [
             {
-                "title": "快销客PC端 V1.5.2",
+                "title": "快销客PC端 V1.5.5",
                 "fullscreen": false,
                 "resizable": true,
                 "center": true,
