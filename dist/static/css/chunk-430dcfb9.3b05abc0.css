@@ -1,0 +1,1 @@
+.brand-tree .tree-node{width:100%;font-size:15px;padding:8px;display:flex;justify-content:space-between;align-items:center}.brand-tree .tree-node .left-icon{font-size:18px;width:26px}.brand-tree .tree-node .right-content{flex:1}.brand-tree .el-tree-node__content{height:40px;color:#333}.brand-tree .opt-btn{display:none}.brand-tree .tree-node:hover .opt-btn{display:block}

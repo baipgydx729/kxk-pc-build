@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d230fe7"],{ef3c:function(e,r,t){"use strict";t.r(r);var n,u,a={created(){const{params:e,query:r}=this.$route,{path:t}=e;this.$router.replace({path:"/"+t,query:r})},render:e=>e()},c=a,p=t("2877"),s=Object(p["a"])(c,n,u,!1,null,null,null);r["default"]=s.exports}}]);
