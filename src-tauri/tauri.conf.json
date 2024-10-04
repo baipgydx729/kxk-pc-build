@@ -60,8 +60,7 @@
                 "digestAlgorithm": "sha256",
                 "timestampUrl": "",
                 "webviewInstallMode": {
-                    "type": "fixedRuntime",
-                    "path": "./Microsoft.WebView2.FixedVersionRuntime.98.0.1108.50.x64/"
+                    "type": "embedBootstrapper"
                 },
                 "wix": {
                     "language": "zh-CN"
